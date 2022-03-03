@@ -36,6 +36,7 @@ Jogador Votos           %
 10              3               37,5%
 11              1               12,5%
 O melhor jogador foi o número 9, com 4 votos, correspondendo a 50% do total de votos.'''
+#========================================================================================
 
 def percentual(numero_votos, total_votos):
     return numero_votos * 100 / total_votos
@@ -54,12 +55,10 @@ while True:
         votos[numero] = votos[numero] + 1
         cont += 1
 
-resultado_votos = []
-soma = maior = 0
-
 print('\nResultado da votacao: \n')
 print(f'Foram computados {cont} votos. \n')
 print('Jogador \tVotos \t Percentual % ')
+maior = 0
 for i in range(len(votos)):
     if votos[i] > 0:
         print(f'{i} \t\t\t{votos[i]} \t\t\t {percentual(votos[i], cont):.1f}% ')
@@ -68,7 +67,6 @@ for i in range(len(votos)):
             maior = votos[i]
 
 mais_votos = max(votos)
-print(mais_votos)
 print(f'O melhor jogador foi o número {melhor_jogador}, com {mais_votos} votos, correspondendo a '
       f'{percentual(votos[melhor_jogador], cont):.0f}% do total de votos.')
 
@@ -77,7 +75,7 @@ w.write(f'O melhor jogador foi o número {melhor_jogador}, com {mais_votos} voto
         f'{percentual(votos[melhor_jogador], cont):.0f}% do total de votos.')  # grava no arquivo
 w.close()  # fecha o arquivo
 
-
+#========================================================================================
 # DESENVOLVIMENTO TESTE ETC
 # def percentual(numero_votos, total_votos):
 #     return numero_votos * 100 / total_votos
