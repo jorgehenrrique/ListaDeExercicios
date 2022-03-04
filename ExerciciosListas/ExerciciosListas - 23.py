@@ -39,6 +39,7 @@ def percentual(bytes, total):
 
 arquivo = open('usuarios.txt')
 linhas = arquivo.readlines()  # ler todas as linhs e jogar em uma lista
+arquivo.close()
 
 lista = []
 for linha in linhas:  # passa por todas as linhas e adiciona cada usuario e, seu espaco em disco, em nova lista
