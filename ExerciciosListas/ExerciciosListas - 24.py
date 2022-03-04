@@ -15,4 +15,4 @@ for i in range(100):
     lances[x - 1] = lances[x - 1] + 1
 
 for i in range(len(lances)):
-    print(f'O {i + 1}º lance saiu {lances[i]} vezes ')
+    print(f'O {i + 1} teve {lances[i]} lances ')
