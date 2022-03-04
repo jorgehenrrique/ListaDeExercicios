@@ -1,4 +1,4 @@
-# Em uma competição de salto em distância cada atleta tem direito a cinco saltos. 
+# 17. Em uma competição de salto em distância cada atleta tem direito a cinco saltos. 
 # O resultado do atleta será determinado pela média dos cinco valores restantes. 
 # Você deve fazer um programa que receba o nome e as cinco distâncias alcançadas 
 # pelo atleta em seus saltos e depois informe o nome, os saltos e a média dos saltos. 
@@ -17,21 +17,20 @@
 # Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3
 # Média dos saltos: 5.9 m
   
+ordem = ['Primeiro', 'Segundo', 'Terceiro', 'Quarto', 'Quinto']
+
 while True:
-    media = 0
     atleta = input('Atleta: ')
     if atleta == '':
         break
-    x = ['Primeiro', 'Segundo', 'Terceiro', 'Quarto', 'Quinto']
     saltos = []
+    soma = 0
     for i in range(5):
-        saltos.append(float(input(f'{x[i]} Salto: ')))
-        media += saltos[i]
-    media = media / 5
-    print()
-    print('Resultado final: ')
-    print(f'Atleta: {atleta}')
-    print(f'Saltos: {saltos}')
-    print(f'Media dos saltos: {media} m')
-    print()
+        saltos.append(float(input(f'{ordem[i]} Salto: ')))
+        soma += saltos[i]
+
+    print('\nResultado final: ')
+    print(f'Atleta: {atleta} ')
+    print(f'Saltos: {saltos[0]} - {saltos[1]} - {saltos[2]} - {saltos[3]} - {saltos[4]} ')
+    print(f'Media dos saltos: {soma / 5:.1f} m\n')
     
