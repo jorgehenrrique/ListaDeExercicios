@@ -28,4 +28,4 @@ while True:
             posicao[i] += 1
 
 for i in range(len(faixa)):
-    print(f'{posicao[i]} vendedores receberam salario no intervalo:  ${faixa[i][0]} ${faixa[i][1]}')
+    print(f'{posicao[i]} vendedores receberam salario no intervalo:  ${faixa[i][0]} - ${faixa[i][1]}')
