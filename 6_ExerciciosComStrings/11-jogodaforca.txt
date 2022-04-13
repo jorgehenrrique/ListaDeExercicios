@@ -1,0 +1,6 @@
+cidade
+circo
+chuva
+aviao
+celular
+computador
